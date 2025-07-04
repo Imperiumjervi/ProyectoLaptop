@@ -1,6 +1,3 @@
-/**
- * MaterialTest
- */
 public class MaterialTest {
 
 }
