@@ -1,0 +1,6 @@
+/**
+ * MaterialTest
+ */
+public class MaterialTest {
+
+}
