@@ -2,10 +2,12 @@ public abstract class Material {
   private String titulo;
   private String genero;
   private boolean disponible = true;
+  private final int id;
 
-  public Material(String titulo, String genero) {
+  public Material(String titulo, String genero, int id) {
     this.titulo = titulo;
     this.genero = genero;
+    this.id = id;
   }
 
   public abstract void mostrarInformacion();
@@ -24,15 +26,31 @@ public abstract class Material {
     disponible = true;
   }
 
-  void setTitulo(String titulo) {
+  public void setTitulo(String titulo) {
     this.titulo = titulo;
   }
 
-  void setGenero(String genero) {
+  public void setGenero(String genero) {
     this.genero = genero;
   }
 
-  void setDisponible(boolean disponible) {
+  public void setDisponible(boolean disponible) {
     this.disponible = disponible;
+  }
+
+  public String getTitulo() {
+    return titulo;
+  }
+
+  public String getGenero() {
+    return genero;
+  }
+
+  public boolean getDisponible() {
+    return disponible;
+  }
+
+  public int getId() {
+    return id;
   }
 }
